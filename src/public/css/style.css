@@ -26,3 +26,31 @@ body {
     background-color: #04AA6D;
     color: white;
 }
+
+.create-user-container {
+    max-width: 300px;
+    margin: 50px auto;
+}
+
+.create-user-container h3 {
+    text-align: center;
+}
+
+.create-user-container label {
+    display: block;
+}
+
+.create-user-container form>div {
+    margin: 10px 0;
+}
+
+.create-user-container form>div input {
+    display: block;
+    width: 100%;
+}
+
+.create-user-container form>div button {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
