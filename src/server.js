@@ -3,12 +3,16 @@ dotenv.config();
 import express from "express";
 import configViewEngine from "./config/viewEngine";
 import initWebRoute from './route/web';
+// import connection from './config/connectDB';
 
 const app = express();
 const port = process.env.PORT;
 
+//set up view engine
 configViewEngine(app);
 
+
+//init web route
 initWebRoute(app);
 
 

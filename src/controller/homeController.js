@@ -1,5 +1,9 @@
-let getHomepage = (req, res) => {
-    return res.render('index.ejs');
+import pool from "../config/connectDB";
+
+let getHomepage = async(req, res) => {
+    const [rows] = await pool.execute("SELECT * FROM users");
+
+    return res.render('index.ejs', { dataUsers: rows });
 }
 
 module.exports = {
