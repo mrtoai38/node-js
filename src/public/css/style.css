@@ -54,3 +54,11 @@ body {
     width: 50%;
     margin: auto;
 }
+
+.delete-user {
+    display: inline-block;
+}
+
+.delete-user button {
+    outline: none;
+}
